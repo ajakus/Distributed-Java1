@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="templates/fragments/frags :: head"></head>
+<body>
+<nav th:insert="templates/fragments/frags :: navig"></nav>
+    <div class="content">
+        <div class="content-inside">
+            <div th:replace="templates/fragments/frags :: head"></div>
+            <div th:replace="templates/fragments/frags :: "></div>
+        </div>
+    </div>
+    <a>Check out our tutorial</a>
+//not quite sure why the fragments don't render correctly
+
+</body>
+<footer th:replace="templates/fragments/frags :: footer">
+</footer>
+</html>

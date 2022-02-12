@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="templates/fragments/frags :: head"></head>
+<body>
+<nav th:insert="templates/fragments/frags :: navig"></nav>
+    <div class="content">
+        <div class="content-inside">
+            <div th:replace="templates/fragments/frags :: body"></div>
+            Place your desired coral on a piece of liverock in your aqaurium.
+            <br> It is best practice to use a tad bit of super glue to secure the polyp
+            <br>onto the rock face. The super glue won't harm your coral.
+            <img src="/static/agrdg.jpeg">
+        </div>
+    </div>
+
+
+
+</body>
+<footer th:replace="templates/fragments/frags :: footer">
+</footer>
+</html>

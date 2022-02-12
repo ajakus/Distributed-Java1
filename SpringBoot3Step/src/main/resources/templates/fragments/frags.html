@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:fragment="head">
+    <title th:text="${pageTitle}"></title>
+    <link rel="stylesheet" th:href="@{/static/styling.css}">
+</head>
+<b th: fragment="logo">
+    <a th:href="@{/}"></a>
+</b>
+//not sure why all of these links don't work
+<nav th:fragment="navig">
+    <div class="navs">
+        <a id="page1" th:href="@{/page1}">1</a>
+        <a id="page2" th:href="@{/page2}">2</a>
+        <a id="page3" th:href="@{/templates/fragments/page3}">3</a>
+    </div>
+</nav>
+<header th:fragment="header" >
+    How to grow your coral
+</header>
+<body th:fragment="body">
+    <img th:src="@{/static/pexels-photo-3204592.jpeg}">
+</body>
+<footer th:fragment="footer">
+    We will teach you how to properly grow your coral to ensure its health and longevity.
+    pictures all from pexels.com
+</footer>
+</html>
